@@ -1,0 +1,9 @@
+flowchart TB
+  Strategy["Platform strategy"] --> Portfolio["API portfolio"]
+  Portfolio --> Governance["Governance board"]
+  Governance --> Delivery["API delivery teams"]
+  Delivery --> Portal["Developer portal"]
+  Portal --> Developers["Developers and partners"]
+  Developers --> Feedback["Usage, feedback, support"]
+  Feedback --> Strategy
+

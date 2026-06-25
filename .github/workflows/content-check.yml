@@ -1,0 +1,22 @@
+name: Content Check
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify required files
+        run: |
+          test -f README.md
+          test -f SECURITY.md
+          test -f CONTRIBUTING.md
+          test -f LICENSE.md
+      - name: Scan for obvious forbidden placeholders
+        run: |
+          ! grep -RInE --exclude-dir=.git "AKIA[0-9A-Z]{16}|sk-[A-Za-z0-9]{20,}|BEGIN (RSA|OPENSSH|PRIVATE) KEY|password *=|api_key *=" .

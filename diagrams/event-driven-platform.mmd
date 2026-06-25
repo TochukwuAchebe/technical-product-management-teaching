@@ -1,0 +1,8 @@
+flowchart LR
+  API["Public API"] --> Service["Domain service"]
+  Service --> Bus["Event bus"]
+  Bus --> Webhooks["Webhook delivery"]
+  Bus --> Analytics["Analytics store"]
+  Bus --> Automation["Workflow automation"]
+  Webhooks --> DLQ["Retry and dead-letter queue"]
+
