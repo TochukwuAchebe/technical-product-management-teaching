@@ -2,7 +2,13 @@
 
 Public sanitized education repository for API product managers, platform product leaders, solution architects, and technical product managers.
 
+Last updated: 11 August 2026.
+
 This repository turns platform product practice into teachable lessons: API management, system design, IAM, event-driven architecture, OpenAPI, API versioning, governance, developer experience, and platform strategy.
+
+## Latest Teaching Context
+
+New examples should connect API and platform strategy to current product work: BuildAI's evaluation and release gates, Nexra's authenticated developer-console journeys, and Synaptiq's setup-gated engineering control plane. The teaching material should continue to show how to explain technical boundaries without overstating implementation or production readiness.
 
 > Public sanitized showcase version based on real product experience. All examples use mock organizations, fictional APIs, and simplified architecture patterns.
 
@@ -81,4 +87,3 @@ The interview resources help candidates explain platform trade-offs clearly:
 - How to reason about identity and access control.
 - How to balance product velocity with platform governance.
 - How to describe architecture decisions without overclaiming implementation depth.
-
